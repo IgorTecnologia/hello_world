@@ -1,4 +1,4 @@
-package com.generation.controller;
+package com.generation.helloworld.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,28 +8,27 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/hello-world")
 public class HelloWorldController {
 
-	@GetMapping("hw")
+	@GetMapping
 	public  String helloWorld() {
-		
 		return  "Hello World";
 	}
 	
-	@GetMapping("bsm")
-	public static String Bsm() {
+	@GetMapping("/bsm")
+	public  String bsm() {
 		 
-		return "Mentalidade de crescimento"
-				+"Mentalidade de orientação ao futuro"
-				+"Mentalidade de persistência"
-				+"Responsabilidade pessoal"
-				+"Proatividade"
-				+"Orientação aos detalhes"
-				+"Comunicação"
-				+"Trabalho em equipe";
+		return "Mentalidade de crescimento</br>"
+				+"Mentalidade de orientação ao futuro</br>"
+				+"Mentalidade de persistência</br>"
+				+"Responsabilidade pessoal</br>"
+				+"Proatividade</br>"
+				+"Orientação aos detalhes</br>"
+				+"Comunicação</br>"
+				+"Trabalho em equipe</br>";
 				
 	}
 	
-	@GetMapping("obj")
-	public static String Objetivo() {
+	@GetMapping("/obj")
+	public  String objetivo() {
 		return "Adiquirir e consquistar mais conhecimentos teóricos e práticos sobre Java e Spring Boot";
 	}
 }
